@@ -12,11 +12,20 @@ function ativarLink(link) {
 
 links.forEach(ativarLink);
 
+<<<<<<< HEAD
 // Ativar Items do Orçamento
 
 const parametros = new URLSearchParams(location.search);
 function ativarProduto(parametro) {
   const elemento = document.getElementById(parametro);
+=======
+// Ativar Itens do Orçamento
+
+const parametros = new URLSearchParams(location.search);
+
+function ativarProduto(parametros) {
+  const elemento = document.getElementById(parametros);
+>>>>>>> d62578a203290984d0c0e5afa1bd80f46e54cd27
   if (elemento) {
     elemento.checked = true;
   }
@@ -24,8 +33,12 @@ function ativarProduto(parametro) {
 
 parametros.forEach(ativarProduto);
 
+<<<<<<< HEAD
 // Perguntas Frequentes
 
+=======
+// Perguntas Frequentes //
+>>>>>>> d62578a203290984d0c0e5afa1bd80f46e54cd27
 const perguntas = document.querySelectorAll(".perguntas button");
 
 function ativarPergunta(event) {
@@ -35,6 +48,10 @@ function ativarPergunta(event) {
 
   resposta.classList.toggle("ativa");
   const ativa = resposta.classList.contains("ativa");
+<<<<<<< HEAD
+=======
+  console.log(ativa);
+>>>>>>> d62578a203290984d0c0e5afa1bd80f46e54cd27
   pergunta.setAttribute("aria-expanded", ativa);
 }
 
@@ -43,3 +60,25 @@ function eventosPerguntas(pergunta) {
 }
 
 perguntas.forEach(eventosPerguntas);
+<<<<<<< HEAD
+=======
+
+// Galeria de Imagens //
+const galeria = document.querySelectorAll(".bicicleta-imagens img");
+const galeriaContainer = document.querySelector(".bicicleta-imagens ");
+
+function trocarImagem(event) {
+  const img = event.currentTarget;
+  const media = matchMedia("(min-width: 1000px)").matches;
+
+  if (media) {
+    galeriaContainer.prepend(img);
+  }
+}
+
+function eventosGaleria(img) {
+  img.addEventListener("click", trocarImagem);
+}
+
+galeria.forEach(eventosGaleria);
+>>>>>>> d62578a203290984d0c0e5afa1bd80f46e54cd27
