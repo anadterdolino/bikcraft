@@ -48,10 +48,6 @@ function ativarPergunta(event) {
 
   resposta.classList.toggle("ativa");
   const ativa = resposta.classList.contains("ativa");
-<<<<<<< HEAD
-=======
-  console.log(ativa);
->>>>>>> d62578a203290984d0c0e5afa1bd80f46e54cd27
   pergunta.setAttribute("aria-expanded", ativa);
 }
 
@@ -60,8 +56,6 @@ function eventosPerguntas(pergunta) {
 }
 
 perguntas.forEach(eventosPerguntas);
-<<<<<<< HEAD
-=======
 
 // Galeria de Imagens //
 const galeria = document.querySelectorAll(".bicicleta-imagens img");
@@ -81,4 +75,4 @@ function eventosGaleria(img) {
 }
 
 galeria.forEach(eventosGaleria);
->>>>>>> d62578a203290984d0c0e5afa1bd80f46e54cd27
+
